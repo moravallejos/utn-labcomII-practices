@@ -31,30 +31,34 @@
         </thead>
         <tbody>
             <tr>
-                <td><form action="/accion.php">
-                    <label for="nombre"><strong>Nombre: </strong></label>
-                    <br> 
-                    <label for="email"><strong>E-mail: </strong> </label>
-                    <br> 
-                    <label for="edad"><strong>Edad: </strong></label>
-                    <br> 
-                    <label for="color"><strong>Color Preferido: </strong></label>
-                    <br>
-                    <label for="comentario"><strong>Comentario: </strong> </label>
-                </td>
-                <td><input type="text" id="nombre" name="nombre" value="" />
-                    <br> 
-                    <input type="text" id="email" name="email" value="" />
-                    <br> 
-                    <input type="text" id="edad" name="edad" value="" />
-                    <br> 
-                    <input type="text" id="color" name="color" value="" />
-                    <br> 
-                    <input type="text" id="comentario" name="comentario" value="" />
-                </td>
+                <form action="">
+                    <table>
+                    <tr>
+                        <td><label for="nombre"><b>Nombre:</b></label></td>
+                        <td><input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre completo." required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mail"><b>Correo electrónico:</b></label></td>
+                        <td><input type="email" name="mail" id="mail" placeholder="Ingrese su correo electrónico." required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="edad"><b>Edad:</b></label></td>
+                        <td><input type="number" name="edad" id="edad"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="color"><b>Color favorito:</b></label></td>
+                        <td><input type="color" name="colo" id="color"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="comentario"><b>Comentario:</b></label></td>
+                        <td><textarea name="comentario" id="comentario" cols="30" rows="10" minlength="10"></textarea></td>
+                    </tr>
+                    </table>
+                    <input type="checkbox" name="Check"/>
+                    <button type="submit">Enviar</button>
+                    </form>
             </tr>
     </table>
     <br>
-
 </body>
 </html>
