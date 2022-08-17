@@ -5,8 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <meta charset="UTF-8">
+        <title>Clase2</title>
+        <style> 
+            table,
+            td,
+            th {
+            border: 1px solid red;
+            border-collapse: collapse;
+            padding: 5px;
+            }
+            table {
+            width: 100%;
+            }
+        </style>
 </head>
 <body>
     <p>Hola</p>
+    <table>
+        <thead>
+            <tr>
+                <th>1</th>
+                <th>2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><form action="/accion.php">
+                    <label for="nombre"><strong>Nombre: </strong></label>
+                    <br> 
+                    <label for="email"><strong>E-mail: </strong> </label>
+                    <br> 
+                    <label for="edad"><strong>Edad: </strong></label>
+                    <br> 
+                    <label for="color"><strong>Color Preferido: </strong></label>
+                    <br>
+                    <label for="comentario"><strong>Comentario: </strong> </label>
+                </td>
+                <td><input type="text" id="nombre" name="nombre" value="" />
+                    <br> 
+                    <input type="text" id="email" name="email" value="" />
+                    <br> 
+                    <input type="text" id="edad" name="edad" value="" />
+                    <br> 
+                    <input type="text" id="color" name="color" value="" />
+                    <br> 
+                    <input type="text" id="comentario" name="comentario" value="" />
+                </td>
+            </tr>
+    </table>
+    <br>
+
 </body>
 </html>
