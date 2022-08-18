@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
+        box-sizing: border-box;
+        }
+        body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #aaaaaa;
+        }
+        div.container {
+        overflow: auto;
+        }
+        header {
+        background-color: #e5e5e5;
+        padding: 15px;
+        text-align: center;
+        }
+        nav {
+        float: left;
+        width: 20%;
+        text-align: center;
+        }
+        nav ul {
+        padding-left: 0px;
+        }
+        nav li {
+        list-style: none;
+        }
+        
+        nav li a {
+        background-color: #e5e5e5;
+        padding: 8px;
+        margin-top: 7px;
+        display: block;
+        width: 100%;
+        color: black;
+        font-weight: 700;
+        }
+        main {
+        float: left;
+        width: 60%;
+        padding: 0 20px;
+        }
+        .right {
+        background-color: #e5e5e5;
+        float: left;
+        width: 20%;
+        padding: 15px;
+        margin-top: 7px;
+        text-align: center;
+        }
+        footer {
+        background-color: #e5e5e5;
+        text-align: center;
+        padding: 10px;
+        margin-top: 7px;
+        }
+        /* For mobile phones: */
+        @media only screen and (max-width: 620px) {
+        nav,
+        main,
+        .right {
+        width: 100%;
+        }
+        }
+        </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <meta charset="UTF-8">
+        <title>Clase2</title>
+        <style> 
+            table,
+            td,
+            th {
+            border: 1px solid red;
+            border-collapse: collapse;
+            padding: 5px;
+            }
+            table {
+            width: 100%;
+            }
+        </style>
+</head>
+<body>
+    <p>Hola</p>
+    <table>
+        <thead>
+            <tr>
+                <th>1</th>
+                <th>2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <form action="">
+                    <table>
+                    <tr>
+                        <td><label for="nombre"><b>Nombre:</b></label></td>
+                        <td><input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre completo." required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mail"><b>Correo electrónico:</b></label></td>
+                        <td><input type="email" name="mail" id="mail" placeholder="Ingrese su correo electrónico." required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="edad"><b>Edad:</b></label></td>
+                        <td><input type="number" name="edad" id="edad"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="color"><b>Color favorito:</b></label></td>
+                        <td><input type="color" name="colo" id="color"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="comentario"><b>Comentario:</b></label></td>
+                        <td><textarea name="comentario" id="comentario" cols="30" rows="10" minlength="10"></textarea></td>
+                    </tr>
+                    </table>
+                    <input type="checkbox" name="Check"/>
+                    <button type="submit">Enviar</button>
+                    </form>
+            </tr>
+    </table>
+    <br>
+    <h2><em><strong>Mapa de la Universidad Tecnológica Nacional</strong></em></h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1673.9289926023812!2d-60.64444439939346!3d-32.954758660072976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab11d0eb49c3%3A0x11f1d3d54f950dd0!2sUniversidad%20Tecnol%C3%B3gica%20Nacional%20%7C%20Facultad%20Regional%20Rosario!5e0!3m2!1ses!2sar!4v1598106189927!5m2!1ses!2sar" width="400" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</body>
+</html>
