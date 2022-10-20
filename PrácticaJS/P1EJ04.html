@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <script>
+        let nombre;
+        nombre = prompt('Ingrese el nombre del postulante');
+        let cantpreguntas;
+        cantpreguntas = parseInt(prompt('Cantidad de preguntas del test'));
+        let cantcorrectas;
+        cantcorrectas = parseInt(prompt('Cantidad de preguntas correctas'));
+        let porcentaje;
+        porcentaje = cantcorrectas / cantpreguntas * 100;
+        if (porcentaje >= 90) {
+            document.write('Nivel superior');
+        } else {
+            if (porcentaje >= 75) {
+                document.write('Nivel medio');
+            } else {
+                if (porcentaje >= 50) {
+                    document.write('Nivel regular');
+                } else {
+                    document.write('Fuera de nivel');
+                }
+            }
+        }
+    </script>
+</body>
+</html>
